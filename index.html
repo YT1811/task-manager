@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <script type="module" crossorigin src="/task-manager/assets/index-B-fuKw8a.js"></script>
+  <link rel="stylesheet" crossorigin href="/task-manager/assets/index-CucNWPSv.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📝 Mine Gjøremål</h1>
+      <p>Her kan du lagre dine gjøremål, oppgaver eller viktige datoer!</p>
+      <p2>Bygget med Vite ved hjelp av uuid og date-fns.</p2>
+    </div>
+
+    <div class="input-card">
+      <div class="form-group">
+        <input 
+          type="text" 
+          id="taskInput" 
+          placeholder="Skriv inn en ny oppgave..."
+        >
+      </div>
+      <div class="input-row">
+        <input 
+          type="datetime-local" 
+          id="deadlineInput"
+        >
+        <button class="btn" id="addBtn">➕ Legg til</button>
+      </div>
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+
+    <div id="stats" class="stats"></div>
+    
+  </div>
+</body>
+</html>
